@@ -5,12 +5,14 @@
 		<div id="navigation_inner">
 			
 			<ul>
+			
 				<li><a href="Home.aspx">Home</a></li>
 				<li class="current_page_item"><a href="Buy.aspx">Buy Home</a></li>
 				<li><a href="BuyLand.aspx">Buy Land</a></li>
 				<li><a href="Sell.aspx">Selling</a></li>
 				<li><a href="ContactGeneral.aspx">Contact Us</a></li>
 				<li><a href="Login.aspx">Admin Login</a></li>
+				
 			</ul>
 
 		</div>
