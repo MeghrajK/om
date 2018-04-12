@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="AdminMasterPg.master.cs" Inherits="AdminMasterPg" %>
+
+<asp:Content ID="Content4" runat="server" contentplaceholderid="ContentPlaceHolder1">
+
+</asp:Content>
+<asp:Content ID="Content5" runat="server" contentplaceholderid="ContentPlaceHolder2">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+        <div style="height:10px;"></div>
+</asp:Content>
+<asp:Content ID="Content6" runat="server" contentplaceholderid="ContentPlaceHolder3">
+    <div class="Admin_Menu">
+        <div>
+            <div style="height:15px;"></div>
+            <div style="height:auto; width:195px; margin:0px auto;">
+                
+                    <asp:TreeView ID="Admin_Menus" runat="server" Width="200px" 
+                        CollapseImageUrl="~/Images/ManageOffers.png"  ShowLines="True" 
+                        RootNodeStyle-ImageUrl="~/Images/ManageOffers.png" onselectednodechanged="Admin_Menus_SelectedNodeChanged" 
+                         RootNodeStyle-CssClass="Root_Node" LeafNodeStyle-CssClass="Child_Node" 
+                         LeafNodeStyle-HorizontalPadding="10px" LeafNodeStyle-ImageUrl="~/Images/Add.png"
+                         ParentNodeStyle-HorizontalPadding="5px" ParentNodeStyle-ImageUrl="~/Images/Add.png" ParentNodeStyle-CssClass="Parent_Node">
+                        
+                        <HoverNodeStyle CssClass="HoverAdminMenu" ForeColor="#DA3F67"  />
+                        <Nodes>
+                            <asp:TreeNode Expanded="False" SelectAction="Expand" Text="Manage Offers" 
+                                Value="ManageOffers">
+                                <asp:TreeNode Expanded="False" Text="Manage Home" Value="Manage" 
+                                    SelectAction="Expand">
+                                    <asp:TreeNode Text="Add Home" Value="ManageHome"></asp:TreeNode>
+                                    <asp:TreeNode Text="Edit Home" Value="EditHome"></asp:TreeNode>
+                                    </asp:TreeNode>
+                                <asp:TreeNode Text="Manage Land" Value="Manage" Expanded="False" 
+                                    SelectAction="Expand">
+                                    <asp:TreeNode Text="Add Land" Value="ManageLand"></asp:TreeNode>
+                                    <asp:TreeNode Text="Edit Land" Value="EditLand"></asp:TreeNode>
+                                </asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Expanded="False" SelectAction="Expand" Text="Manage Enquiry" 
+                                Value="ManageEnquiry">
+                                <asp:TreeNode Text="Search Enquiry" Value="SearchEnquiry"></asp:TreeNode>
+                            </asp:TreeNode>
+                        </Nodes>
+                        <RootNodeStyle HorizontalPadding="10px" VerticalPadding="7px" />
+                        <LeafNodeStyle NodeSpacing="4px" VerticalPadding="3px" />
+                        <ParentNodeStyle NodeSpacing="4px" VerticalPadding="3px"/>
+                    </asp:TreeView>
+               
+            </div>
+        </div>
+    </div>
+</asp:Content>
+
+

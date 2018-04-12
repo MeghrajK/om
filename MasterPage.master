@@ -1,0 +1,329 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage"  %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Sukhakarta Builders</title>
+    <%--<link rel="icon" href="../Images/ManageOffers.png" type="image/x-icon">--%>
+    <link href="CSS/ForMasterPage.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Jquery/jquery-1.4.1.min.js"></script>
+
+<%--<meta name="description" content="Teamgum is a browser extension which lets you share links with your team on just a click, without leaving the page you’re on. It’s fast, easy and free to download in the Web Store.">
+<meta name="keywords" content="link sharing, sharing links, browser extension, productivity tool, web extension, sharing weblinks, news sharing, email, intranet, enterprise social business, knowledge sharing platform, reddit, facebook, twitter, enterprise social network, enterprise collaboration platform, enterprise social, social business, ESN, collaboration software, enterprise collaboration, SaaS, employee engagement, mobile learning, knowledge management, knowledge base, knowledge management tool, knowledge sharing , knowledge sharing tools,build knowledge, social business, DIY, link sharing, sharing links, knowledge sharing, reader list, discover knowledge, teams , drona mobile, enagement platform, social learning, news feed.">
+<meta charset="UTF-8">--%>
+    
+   <%-- <script type="text/javascript" src="UI_Ori/Jquery/jquery-1.4.1.min.js"></script>
+     
+    <link href="UI_Ori/UI/css1/smoothness/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css"/>
+	<script src="UI_Ori/UI/js/jquery-1.8.3.js" type="text/javascript"></script>
+	<script src="UI_Ori/UI/js/jquery-ui-1.9.2.custom.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="UI_Ori/UI/ui1/themes/jquery.ui.all.css" type="text/css" />
+	<script src="UI_Ori/UI/ui1/jquery-1.8.3.js" type="text/javascript"></script>
+	<script src="UI_Ori/UI/ui1/ui2/jquery.ui.core.js" type="text/javascript"></script>
+	<script src="UI_Ori/UI/ui1/ui2/jquery.ui.widget.js" type="text/javascript"></script>
+	<script src="UI_Ori/UI/ui1/ui2/jquery.ui.accordion.js" type="text/javascript"></script>
+	
+	<script type="text/javascript"> 
+            $(function() {
+		                    $( "#accordion" ).accordion();
+	                    });
+	 </script>
+	    
+	    <style type="text/css">
+	        #Main_Prod
+            {
+	            
+	            height:auto;
+	            margin:0px auto;
+                border-bottom:1px solid #C0D1D8;
+                border-left:1px solid #C0D1D8;
+                border-right:1px solid #C0D1D8;
+            }
+            	  
+	    .demoHeaders 
+	    {
+		    margin-top: 2em;
+	    }
+	    #dialog-link 
+	    {
+		    padding: .4em 1em .4em 20px;
+		    text-decoration: none;
+		    position: relative;
+	    }
+	    #dialog-link span.ui-icon {
+		    margin: 0 5px 0 0;
+		    position: absolute;
+		    left: .2em;
+		    top: 50%;
+		    margin-top: -8px;
+	    }
+	    #icons {
+		    margin: 0;
+		    padding: 0;
+	    }
+	    #icons li 
+	    {
+		    margin: 2px;
+		    position: relative;
+		    padding: 4px 0;
+		    cursor: pointer;
+		    float: left;
+		    list-style: none;
+	    }
+	    #icons span.ui-icon {
+		    float: left;
+		    margin: 0 4px;
+	    }
+	</style>
+--%>
+    
+    <%--<link rel="stylesheet" href="Dialog/jquery.ui.all.css" type="text/css"/> 
+	<script src="Dialog/jquery-1.10.2.js" type="text/jscript"></script>
+	<script src="Dialog/jquery.ui.core.js" type="text/jscript"></script>
+	<script src="Dialog/jquery.ui.widget.js" type="text/jscript"></script>
+	<script src="Dialog/jquery.ui.mouse.js" type="text/jscript"></script>
+	<script src="Dialog/jquery.ui.draggable.js" type="text/jscript"></script>
+	<script src="Dialog/jquery.ui.position.js" type="text/jscript"></script>
+	<script src="Dialog/jquery.ui.resizable.js" type="text/jscript"></script>
+	<script src="Dialog/jquery.ui.button.js" type="text/jscript"></script>
+	<script src="Dialog/jquery.ui.dialog.js" type="text/jscript"></script>
+	<script src="Dialog/jquery.ui.effect.js" type="text/jscript"></script>
+	<script src="Dialog/jquery.ui.effect-blind.js" type="text/jscript"></script>
+	<script src="Dialog/jquery.ui.effect-explode.js" type="text/jscript"></script>
+	<link rel="stylesheet" href="Dialog/demos.css" type="text/css"/>
+	<script type="text/javascript">
+	$(function() {
+		$( "#dialog" ).dialog({
+			autoOpen: false,
+			show: {
+				effect: "blind",
+				duration: 1000
+			},
+			hide: {
+				effect: "explode",
+				duration: 1000
+			}
+		});
+
+		$( "#opener" ).click(function() {
+			$( "#dialog" ).dialog( "open" );
+		});
+	});
+	</script>--%>
+
+    
+    
+    
+    <script type="text/javascript">       
+             function slideSwitch() {
+                                     var $active = $('#slideshow IMG.active');
+                                     if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+                                     var $next =  $active.next().length ? $active.next()
+                                       : $('#slideshow IMG:first');
+                                      $active.addClass('last-active');
+                                         $next.css({opacity: 0.0})
+                                                                .addClass('active')
+                                                                .animate({opacity: 1.0}, 2000, function() {
+                                                                 $active.removeClass('active last-active');
+                                                                 });
+                                      }
+
+                                     $(function() {
+                                                    setInterval( "slideSwitch()", 5000 );
+                                                  });
+        </script>
+        
+    <link href="Ui/css1/smoothness/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+	<script src="Ui/js/jquery-1.8.3.js" type="text/javascript"></script>
+	<script src="Ui/js/jquery-ui-1.9.2.custom.js" type="text/javascript"></script>
+	
+	<link rel="stylesheet" href="Ui/UI/themes/jquery.ui.all.css" type="text/css" />
+	
+	<script src="Ui/UI/jquery-1.8.3.js" type="text/javascript"></script>
+	<script src="Ui/UI/ui1/jquery.ui.core.js" type="text/javascript"></script>
+	<script src="Ui/UI/ui1/jquery.ui.widget.js" type="text/javascript"></script>
+	
+	<script src="Ui/UI/ui2/jquery.ui.mouse.js" type="text/javascript"></script>
+	<script src="Ui/UI/ui2/jquery.ui.draggable.js" type="text/javascript"></script>
+	<script src="Ui/UI/ui2/jquery.ui.position.js" type="text/javascript"></script>
+	<script src="Ui/UI/ui2/jquery.ui.resizable.js" type="text/javascript"></script>
+	
+	<script src="Ui/UI/ui2/jquery.ui.button.js" type="text/javascript"></script>
+	<script src="Ui/UI/ui2/jquery.ui.dialog.js" type="text/javascript"></script>
+	<script src="Ui/UI/ui2/jquery.ui.effect.js" type="text/javascript"></script>
+	<script src="Ui/UI/ui2/jquery.ui.effect-blind.js" type="text/javascript"></script>
+	
+	
+	<script src="Ui/UI/ui1/jquery.ui.datepicker.js" type="text/javascript"></script>
+	
+	
+	<%--<script src="Ui/UI/ui1/jquery.ui.datepicker-hi.js"></script>--%>
+	<script src="Ui/UI/ui1/jquery.ui.datepicker-en-AU.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+	    $(function() 
+	    {
+		    $( "#datepicker1" ).datepicker();
+	    });
+	    $(function() 
+	    {
+		    $( "#datepicker2" ).datepicker();
+	    });
+
+
+
+        $(function() 
+	    {
+		    $( "#Tb_NxtFollDate" ).datepicker();
+	    });
+	</script>
+	
+	<script type="text/javascript">
+	$(function() {
+		$( "#dialog" ).dialog({
+			autoOpen: false,
+			show: {
+				effect: "blind",
+				duration: 1000
+			},
+			hide: {
+				effect: "blind",
+				duration: 1000
+			}
+		});
+
+		$( "#opener" ).click(function() {
+			$( "#dialog" ).dialog( "open" );
+		});
+	});
+	</script>
+	
+	<style type="text/css">
+	  
+	    .demoHeaders {
+		    margin-top: 2em;
+	    }
+	    #dialog-link {
+		    padding: .4em 1em .4em 20px;
+		    text-decoration: none;
+		    position: relative;
+	    }
+	    #dialog-link span.ui-icon {
+		    margin: 0 5px 0 0;
+		    position: absolute;
+		    left: .2em;
+		    top: 50%;
+		    margin-top: -8px;
+	    }
+	    #icons {
+		    margin: 0;
+		    padding: 0;
+	    }
+	    #icons li {
+		    margin: 2px;
+		    position: relative;
+		    padding: 4px 0;
+		    cursor: pointer;
+		    float: left;
+		    list-style: none;
+	    }
+	    #icons span.ui-icon {
+		    float: left;
+		    margin: 0 4px;
+	    }
+	    
+	    .ui-draggable, .ui-droppable 
+        {
+	        background-position: top;
+        }
+	</style>
+	
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="Container">
+        <div id="Left_Container">
+            <div id="Left_Top">
+                <div id="Logo">
+                </div>
+            </div>
+            <div id="Slideshow1">
+                <div id="slideshow">
+                    
+                    <img src="Images/Slide1.jpg" alt="" class="active"/>
+                    <%--<img src="Images/Slide2.jpg" alt=""/>--%>
+                    <%--<img src="Images/Slide3.jpg" alt=""/>--%>
+                    <img src="Images/Slide4.jpg" alt=""/>
+                    <img src="Images/Slide5.jpg" alt=""/>
+                    <img src="Images/Slide6.jpg" alt=""/>
+                    <%--<img src="Images/Slide-Last.jpg" alt=""/>--%>
+                </div>
+            
+            </div>
+            <div id="Round">
+            </div>
+            <div id="Main_Containts">
+                <div style="height:5px">
+                </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+             <div style="height:5px">
+             </div>
+            <div id="Footer">
+                <div class="Contact_Footer">
+                    <div style="height:8px;"></div>
+                    <div>
+                        <h1 style="font-size:large; color:#DA3F67; height: 20px; margin:0px; padding-left:8px;">Contact Us</h1>
+                    </div>
+                    <div style="height:5px;"></div>
+                    <div style="height:30px;">
+                        <div style="float:left; width:50px; height:30px;" class="email_bg"></div>
+                        <div style="float:right; width:250px; height:30px;">
+                        <div style="height:5px;"></div>
+                        <div style="width:240px; margin-left:5px;">
+                            <asp:Label ID="Label1" runat="server" Text="vishwanath.koli07@gmail.com" Font-Size="Medium"></asp:Label>
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="Right_Container">
+            <div id="Right_Header">
+                <div id="Rht_Top">
+                </div>
+                <div id="Rht_Menus">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            
+            <div id="Rht_Contents">
+                <div style="height:5px;">
+                </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                </asp:ContentPlaceHolder>
+                <div style="height:10px"></div>
+                <div id="DownDocs">
+                    <div style="margin-left:5px">
+                        <asp:ImageButton ID="ImageButton1" runat="server" 
+                            ImageUrl="~/Images/DocsDown2.png" ToolTip="Go and Check document demos" 
+                            PostBackUrl="~/DemoDocs.aspx"/> 
+                    </div>        
+                </div>
+                <div style="height:10px"></div>
+                <div style=" height:550px; width:210px; margin:0px auto;">
+                    <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/Add.xml" />
+                </div>
+        
+                
+            </div>
+        </div >
+        <br />
+    </div>
+    </form>
+</body>
+</html>

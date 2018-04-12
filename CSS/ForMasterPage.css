@@ -1,0 +1,731 @@
+﻿body
+{
+	margin: 0;
+	padding:0;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 1.5em;
+	display: table;
+	
+}
+#Container
+{
+	width:925px;
+	margin:0 auto;
+
+}
+#Left_Container
+{
+	float:left;
+	width:700px;
+
+}
+#Right_Container
+{
+	float:right;
+	width:225px;
+
+}
+#Left_Top
+{
+	float:left;
+	width:700px;
+	height:150px;
+	background-image:url('../Images/LogoBg_700.jpg');
+    background-attachment:scroll;
+    background-repeat:no-repeat;
+}
+
+#Round
+{
+	float:left;
+	width:700px;
+	height:17px;
+	background-image:url(../Images/Below_Slide_700.jpg);
+	background-attachment:scroll;
+	background-repeat:no-repeat;
+}
+#Main_Containts
+{
+	float:left;
+	width:698px;
+}
+#Footer
+{
+	float:left;
+	width:700px;
+	height:225px;
+	background-image:url(../Images/Footer_White_700.jpg);
+	background-attachment:scroll;
+	background-repeat:no-repeat;
+}
+#Logo
+{
+	width:700px;
+	height:150px;
+	background-image:url(../Images/logo_new.png);
+	background-attachment:scroll;
+	background-repeat:no-repeat;
+}
+#Right_Header
+{
+	float:right;
+	height:425px;
+	width:225px;
+	background-image:url(../Images/Right_HeadBg2.jpg);
+	background-attachment:scroll;
+	background-repeat:no-repeat;
+}
+#DownDocs
+{
+	height:75px;
+	/*background-image:url(../Images/DocsDown2.png) ;
+	background-position:center;
+	background-repeat:no-repeat;*/
+}
+
+#Rht_Top
+{
+	height:150px;
+	width:215px;
+	margin:0 auto;
+}
+#Rht_Menus
+{
+	margin:5px auto;
+	height:265px;
+	width:215px;
+}
+#Rht_Contents
+{
+	margin:425px auto;
+	height:auto;
+	width:223px;
+	/*-border-bottom:1px solid #5CA6E5;
+	border-right:1px solid #5CA6E5;----*/
+}
+.Contact_Footer
+{
+	width:300px;
+	height:93px;
+	margin:20px auto auto 20px;
+	border-radius:10px 10px 10px 10px;
+	background:url('../Images/general_bg2.gif') repeat scroll;
+    
+}
+.email_bg
+{
+	
+	background:url('../Images/contact_envelope1.gif') no-repeat scroll;
+}
+/***********SLide SHow----------------*/
+#Slideshow1
+{
+	float:left;
+	width:699px;
+	height:258px;
+	border-left:1px solid #5CA6E5;
+}
+#slideshow 
+{
+position:relative;
+height:258px;
+top: 0px;
+left: 0px;
+
+}
+#slideshow IMG 
+{
+position:absolute;
+top:0px;
+left:0px;
+z-index:8;
+width:698px;
+
+}
+
+#slideshow IMG.active 
+{
+z-index:10;
+}
+
+#slideshow IMG.last-active
+{
+z-index:9;
+}
+
+
+/*----------------Start Of Navigation------------------------*/
+
+#navigation 
+{
+	padding: 0 4px 4px;	
+	height:260px;
+	
+}
+#navigation_inner 
+{
+	width: 215px;
+
+}
+
+#navigation ul li a 
+{	
+	border-bottom: 1px solid #C5E0F7;
+	border-top: 1px solid #C5E0F7;
+	color: #923626;  /*DCD*/
+	display: block;
+	padding: 10px 7%;
+	font: bold small Verdana,sans-serif;
+	text-decoration:none;
+    letter-spacing:1px;
+    list-style-type:none;
+	
+	
+}
+
+#navigation li a:hover
+{
+	background: url('../Images/transpnav.png') repeat-x left bottom;
+	color: #FFF;
+	padding:8px 3% 10px 15%;
+	list-style-type:square;
+	text-shadow:-5px 5px gray;
+	
+}
+ #navigation li.current_page_item a 
+{
+	background: url('../Images/transpnav.png') repeat-x left bottom;
+	color: #FFF;
+	padding:8px 3% 10px 15%;
+	list-style-type:square;
+	
+}
+/*----------------End Of Navigation------------------------*/
+.Quick_Find_Outer
+{
+	height:auto;
+	width:215px;
+	margin:0px 5px auto 5px;
+	border-radius:10px 10px 10px 10px;
+	background:url('../Images/general_bg2.gif') repeat-y scroll;
+	
+}
+.Header_Find
+{
+	height:30px;
+}
+.Quick_Find_Outer h1
+{
+	
+	text-align:center;
+	font-size:large;
+	color:#DA3F67;
+	height: 30px;
+	margin-bottom:0px;
+	width:150px;
+	
+}
+
+.Find_Logo
+{
+	margin:0 0 0 20px;
+	float:left;
+	width:30px;
+	height:30px;
+	background:url('../Images/Search.png') no-repeat scroll;	
+}
+.Qck_Fnd_Rb
+{
+    font-size:small;
+    margin-left:5px;
+}
+.Qck_Fnd_Rb:hover
+{
+	font-size:medium;
+    color:#DA3F67;
+    font-weight:bold;
+    margin-left:10px;
+}
+/*---------------------------Home Page-----------------------------------*/
+.About_Us
+{
+	width:700px;
+	border-radius:10px 10px 10px 10px;
+	background:url('../Images/general_bg2_700.gif') repeat scroll;
+	height:400px;
+}
+.AbtUs_Img
+{
+	width:250px;
+	height:190px;
+	float:left;
+	background:url('../Images/Abt_Us1.png') repeat scroll;
+	margin:5px auto auto 10px;
+}
+.AboutUs_Info
+{
+	width:415px;
+	height:190px;
+	float:right;
+	margin:5px 10px auto auto;
+}
+.Speacial_Offers
+{
+	width:700px;
+	border-radius:10px 10px 10px 10px;
+	background:url('../Images/general_bg2_700.gif') repeat scroll;
+	height:auto;
+}
+.Row
+{
+	text-align:center;
+	font-size:large;
+	color:#DA3F67;
+	height: 30px;
+	width:690px;
+	margin:0 auto;
+	
+}
+.Row h1
+{
+	text-align:center;
+	font-size:large;
+	color:#DA3F67;
+	height: 30px;
+	margin:0 auto;
+	width:674px;
+}
+.Display_SO
+{
+    height:auto;
+    width:680px;
+    margin:0px 10px auto 10px;
+}
+.GoDetails
+{
+	height:30px;
+	cursor:pointer;
+	padding:auto;
+	width:100px;
+}
+.GoDetails:hover
+{
+/*	color:#FC421E;
+    background-color:#C6EBFA;
+    width:105px;
+*/
+}
+.GrdHeader
+{
+	height:30px;
+}
+.QckFnd_Lbl
+{
+	float:Left;
+	margin-left:5px;
+	font-size:medium;
+	Width:70px;
+	text-align:Left;
+}
+
+
+/*-------------------------buying and selling-----------------------------*/
+.Filter
+{
+	width:700px;
+	border-radius:10px 10px 10px 10px;
+	background:url('../Images/general_bg2_700.gif') repeat scroll;
+	height:auto;
+	
+}
+.Result
+{
+	width:700px;
+	border-radius:10px 10px 10px 10px;
+	background:url('../Images/general_bg2_700.gif') repeat scroll;
+	height:auto;
+}
+.Inner_Filter
+{
+	width:680px;
+	height:auto;
+	margin:10px 10px auto 10px;
+}
+.Lbl
+{
+	float:right;
+	margin-right:15px;
+	font-size:medium;
+	width:100px;
+	text-align:Left;
+}
+.Textbox
+{
+	width:170px;
+}
+.RqFld
+{
+	margin:0px;
+}
+.AreaTb
+{
+	width:80px;
+	float:left;
+	margin-right:10px;
+}
+.AreaDp
+{
+	 width:70px;
+	 float:left;
+}
+.AreaTbUnit
+{
+	width:75px;
+	float:left;
+	text-align:center;
+}
+.Inner_Result
+{
+	width:680px;
+	height:auto;
+	margin:10px 10px auto 10px;
+}
+/*--*/
+/*------------Admin Login------------------*/
+#Login_Outer
+{
+	width:700px;
+	height:400px;
+}
+#Login
+{
+	width:400px;
+	height:250px;
+	margin:75px 150px;
+	background:url('../Images/general_bg2_700.gif') repeat scroll;
+	border-radius:15px;
+}
+.Row1
+{
+	text-align:center;
+	font-size:large;
+	color:#DA3F67;
+	height: 30px;
+	width:400px;
+	margin:0 auto;
+	
+}
+.Row1 h1
+{
+	text-align:center;
+	font-size:larger;
+	color:#DA3F67;
+	height: 30px;
+	margin:0 auto;
+	width:400px;
+}
+
+/*----------------Admin Login-----------------------*/
+.Button_bg
+{
+	color:#DA3F67;
+	font-size:medium;
+    font-weight:bold;
+    
+}
+/***********----Description-----**************/
+.Description_Outer
+{
+	width:700px;
+	border-radius:10px 10px 10px 10px;
+	background:url('../Images/general_bg2_700.gif') repeat scroll;
+	height:auto;
+}
+.Left_Desc
+{
+	float:left;
+	width:300px;
+	height:auto;
+}
+.Right_Desc
+{
+	float:right;
+	width:400px;
+	height:auto;
+}
+.Row2
+{
+	text-align:center;
+	font-size:medium;
+	color:#DA3F67;
+	margin:0 auto;
+	background-color:#C3E4FD;
+	height:25px;
+	border-radius:5px;
+}
+.Row2 h1
+{
+	text-align:center;
+	font-size:medium;
+	color:#DA3F67;
+	margin:0px auto;
+   
+}
+.Btn_General
+{
+	color:#DA3F67;
+	font-size:medium;
+    font-weight:bold;
+    
+}
+/*------------------Contact -------------------*/
+.Reg_Outer
+{
+	width:700px;
+	border-radius:10px 10px 10px 10px;
+	background:url('../Images/general_bg2_700.gif') repeat scroll;
+	height:auto;
+}
+.Lbl1
+{
+	font-size:small;
+}
+.LblGeneral
+{
+	font-size:small;
+	float:right;
+	margin-left:5px;
+	margin-right:15px;
+	width:100px;
+	text-align:Left;
+}
+/**-----------------------------AdminHome---------------------------**/
+
+
+.Admin_Header
+{
+	width:680px;
+	margin-left:10px;
+	height:70px;
+}
+.LogoutBtn
+{
+	text-decoration:none;
+	width:80px;
+	font-size:medium;
+	margin-left:0px;
+    text-align:right;
+    padding-right:25px;
+}
+.MasterOuter
+{
+	width:700px;
+	border-radius:10px 10px 10px 10px;
+	background:url('../Images/general_bg2_700.gif') repeat scroll;
+}
+/*---------------Manage Home--------------*/
+.Outer
+{
+	width:700px;
+	border-radius:10px 10px 10px 10px;
+	background:url('../Images/general_bg2_700.gif') repeat scroll;
+	height:550px;
+}
+.Unit_AdmnHm
+{
+	text-align:center;
+}
+.HoverAdminMenu
+{
+	cursor:pointer;
+}
+/*--------------------------------Search Home----------------------*/
+.GoDetails1
+{
+	
+}
+/*-----------Admin Master---------*/
+.Admin_Menu
+{
+	height:auto;
+	width:215px;
+	margin:0px 5px auto 5px;
+	border-radius:10px 10px 10px 10px;
+	background:url('../Images/general_bg2.gif') repeat-y scroll;	
+}
+.Root_Node
+{
+	font-size:17px;
+    font-weight:normal;
+    color:#6600CC;
+}
+.Child_Node
+{
+	font-size:13px;
+    font-weight:normal;
+    color:#6600CC;
+}
+.Parent_Node
+{
+	font-size:15px;
+    font-weight:normal;
+    color:#6600CC;
+}
+
+/*---------------SearchEnquiry--------------------*/
+.EnqSearch_Outer
+{
+	width:700px;
+	border-radius:10px 10px 10px 10px;
+	background:url('../Images/general_bg2_700.gif') repeat scroll;
+	height:270px;
+}
+.Lbl2
+{
+	float:left;
+	margin-left:15px;
+	font-size:small;
+	width:135px;
+	text-align:Left;
+}
+.Lbl3
+{
+	float:left;
+	margin-left:15px;
+	font-size:small;
+	width:80px;
+	text-align:Left;
+}
+.TbFup_Addr
+{
+	margin-top:0px;
+	margin-left:5px;
+	margin-right:5px;
+	width:250px;
+	Height:80px;
+	background-color:#C9F0FA;
+	color:#300505;
+	border:1px solid #300505;
+	padding-left:5px;
+}
+.SearchEnq_Tb
+{
+	float:left;
+	margin-left:15px;
+	font-size:small;
+	width:135px;
+	text-align:Left;
+}
+.Srch_Item
+{
+	padding-left:10px;
+}
+
+/*------------------Followup--------------------------*/
+.Followup_Outer
+{
+	width:700px;
+	border-radius:10px 10px 10px 10px;
+	background:url('../Images/general_bg2_700.gif') repeat scroll;
+	/*height:650px;*/
+	height:auto;
+}
+.Marquee
+{
+	
+	border-radius:5px 5px 5px 5px;
+	background:url('../Images/MarqBg1.jpg') repeat scroll;
+}
+
+.Marquee_Lbl
+{
+	height:25px;
+	vertical-align:middle;
+	letter-spacing:1px;
+}
+.Marquee_Lbl:hover
+{
+	color:White;
+}
+.Tb_Followup
+{
+	width:162px;
+	background-color:#C9F0FA;
+	color:#300505;
+	border:1px solid #300505;
+	padding-left:5px;
+}
+.Rbtn
+{
+    margin-left:15px;
+    font-size:small;
+    color:#300505;
+}
+.QckFnd_Res
+{
+	width:700px;
+	border-radius:10px 10px 10px 10px;
+	background:url('../Images/general_bg2_700.gif') repeat scroll;
+	height:auto;
+}
+/*********EDIT home and Land*********/
+.Edit_Outer
+{
+	width:700px;
+	border-radius:10px 10px 10px 10px;
+	background:url('../Images/general_bg2_700.gif') repeat scroll;
+	height:auto;
+	
+}
+.Edit_Contents
+{
+	width:680px;
+	margin-left:10px;
+	height:auto;
+	
+}
+/*****************START DOWNLOAD DOCS************/
+.Initial
+{
+	width:100px;
+	height:35px;
+	display: block;
+	padding: 4px 18px 4px 18px;
+	float: left;
+	background: url("../Images/InitialImage.png") no-repeat right top;
+	color: #721449;
+	font-weight: bold;
+}
+.Initial:hover
+{
+	width:100px;
+	height:35px;
+	color: White;
+	background: url("../Images/SelectedButton.png") no-repeat right top;
+	cursor:pointer;
+	text-shadow:-5px 5px gray;
+}
+
+.Clicked
+{
+	
+	width:100px;
+	height:35px;
+	float: left;
+	display: block;
+	background: url("../Images/SelectedButton.png") no-repeat right top;
+	padding: 4px 18px 4px 18px;
+	text-shadow:-5px 5px gray;
+	font-weight: bold;
+	color: White;
+	cursor:pointer;
+	font-size:small;
+}
+/*****************END DOWNLOAD DOCS************/
+.Empty
+{
+	font-size:small;
+	color:#DA3F67;
+}

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>nokia.jpg</ImageUrl>
+    <AlternateText>"Nokia"</AlternateText>
+    <Impressions>2</Impressions>
+  </Ad>
+</Advertisements>

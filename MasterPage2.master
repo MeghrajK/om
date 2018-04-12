@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<asp:Content ID="Content4" runat="server" contentplaceholderid="ContentPlaceHolder1">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
+<asp:Content ID="Content5" runat="server" contentplaceholderid="ContentPlaceHolder2">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
+<asp:Content ID="Content6" runat="server"  contentplaceholderid="ContentPlaceHolder3">
+    <asp:ContentPlaceHolder ID="CPH_New" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+    <%--<div class="Quick_Find_Outer">
+        <div style="height:1px"></div>
+        <div class="Header_Find">
+            <div class="Find_Logo"></div>
+            <h1>Quick Find</h1>
+        </div>
+        <div style="height:5px;"></div>
+        <div style="height:245px; width:205px; margin-left:5px;">
+            <table style="width: 100%; height: 169px;">
+                <tr>
+                    <td style="width: 86px">
+                        <asp:Label ID="Label2" runat="server" Text="City" CssClass="QckFnd_Lbl" 
+                            ></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="Tb_QckFnd_City" runat="server" Width="105px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 86px">
+                        <asp:Label ID="Label3" runat="server" Text="Price" CssClass="QckFnd_Lbl" ForeColor="#DA3F67"></asp:Label>
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 86px">
+                        <asp:Label ID="Label4" runat="server" Text="Minimum" CssClass="QckFnd_Lbl"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="Tb_QckFnd_MinPrc" runat="server" Width="105px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 86px">
+                        <asp:Label ID="Label5" runat="server" Text="Maximum" CssClass="QckFnd_Lbl"></asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="Tb_QckFnd_MaxPrc" runat="server" Width="105px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 86px">
+                        <asp:RadioButton ID="Rb_Land" runat="server" Text=" Land"  
+                            CssClass="Qck_Fnd_Rb" GroupName="QckFnd"/>
+                    </td>
+                    <td>
+                        <asp:RadioButton ID="Rb_Home" runat="server" Text=" Home" CssClass="Qck_Fnd_Rb" 
+                            GroupName="QckFnd" />
+                    </td>
+                </tr>
+                </table>
+                <div style="height:5px;"></div>
+                <div style="height:70px;">
+                    <div style="width:120px; margin:15px auto;">
+                        <asp:Button ID="Btn_QuickFind" runat="server" Text="Find" CssClass="Btn_General" 
+                        Width="120px" Height="35px" onclick="Btn_QuickFind_Click" />
+                    </div>
+                </div>
+        </div>    
+    </div>--%>
+<%--</asp:Content>--%>
