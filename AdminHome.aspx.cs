@@ -17,7 +17,11 @@ public partial class AdminHome : System.Web.UI.Page
     {
         if ((Session["IsLogin"].ToString() != "Success") || (Session["IsLogin"].ToString()==""))
         {                      
+
             Response.Redirect("Login.aspx");
+
+
+
         }
        
 
